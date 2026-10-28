@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090b12">
+<title>GAME HUB｜游戏工具商城</title>
+<style>
+:root{--bg:#090b12;--panel:#111522;--panel2:#171c2c;--line:#292f43;--text:#f4f6ff;--muted:#9aa3bb;--purple:#a78bfa;--cyan:#5eead4;--pink:#f0abfc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#29204c 0,transparent 34%),var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans SC",sans-serif}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.topbar{position:sticky;top:0;z-index:5;background:#090b12eF;backdrop-filter:blur(16px);border-bottom:1px solid #24283a}.nav{min-height:68px;display:flex;align-items:center;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.08em;white-space:nowrap}.logo{width:38px;height:38px;display:grid;place-items:center;border-radius:12px;background:linear-gradient(135deg,#a78bfa,#5eead4);color:#090b12;font-size:21px}.navlinks{display:flex;gap:20px;color:var(--muted);font-size:14px;margin-left:22px}.navlinks a:hover{color:white}.navright{margin-left:auto;display:flex;gap:9px}.btn{border:1px solid var(--line);border-radius:12px;padding:10px 14px;background:#171b2a;color:var(--text);font-weight:700}.btn:hover{border-color:var(--purple)}.btn.primary{background:linear-gradient(135deg,#a78bfa,#7c6af2);border:0;color:#0b0b16}.cartcount{display:inline-grid;place-items:center;min-width:21px;height:21px;border-radius:99px;background:var(--cyan);color:#07110f;font-size:12px;margin-left:5px}.hero{padding:54px 0 30px;display:grid;grid-template-columns:1.25fr .75fr;gap:26px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(34px,5vw,58px);line-height:1.07;letter-spacing:-.04em;margin:16px 0}.grad{background:linear-gradient(90deg,#c4b5fd,#5eead4);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);font-size:16px;line-height:1.8;max-width:610px}.heroactions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.heroart{min-height:265px;border:1px solid #34314d;border-radius:25px;position:relative;overflow:hidden;background:linear-gradient(145deg,#201a3d,#101522 65%);display:grid;place-items:center}.orb{width:175px;height:175px;border-radius:50%;border:1px solid #a78bfa88;box-shadow:0 0 70px #8b5cf655,inset 0 0 45px #5eead422;display:grid;place-items:center;font-size:68px;transform:rotate(-12deg)}.heroart:before,.heroart:after{content:"";position:absolute;width:280px;height:1px;background:linear-gradient(90deg,transparent,#5eead4,transparent);transform:rotate(-30deg)}.heroart:after{transform:rotate(38deg)}.floatlabel{position:absolute;bottom:18px;left:18px;background:#0a0d18cc;border:1px solid #36364f;border-radius:12px;padding:10px 13px;font-size:12px;color:#d8d8ef}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0 34px}.stat{border:1px solid var(--line);background:#111522b8;border-radius:14px;padding:14px}.stat strong{font-size:20px;display:block}.stat span{font-size:12px;color:var(--muted)}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:24px 0 18px}.sectionhead h2{margin:0;font-size:25px}.sectionhead p{margin:6px 0 0;color:var(--muted);font-size:13px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.chip{border:1px solid var(--line);background:#111522;color:#c0c7d9;padding:9px 13px;border-radius:999px;font-size:13px}.chip.active,.chip:hover{background:#282244;border-color:#8b7be9;color:#fff}.searchrow{display:flex;gap:9px;margin-bottom:18px}.search{flex:1;min-width:0;background:#111522;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:white;outline:none}.search:focus{border-color:var(--purple)}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.product{border:1px solid var(--line);background:linear-gradient(180deg,#151a2a,#10131e);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .18s,border-color .18s}.product:hover{transform:translateY(-3px);border-color:#6559a3}.productvisual{height:140px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 50%,#4c3678,#1a2035 48%,#121622)}.productvisual.mint{background:radial-gradient(circle at 50% 50%,#1b665e,#182a38 50%,#121622)}.productvisual.blue{background:radial-gradient(circle at 50% 50%,#274f8b,#1a2035 52%,#121622)}.productvisual.orange{background:radial-gradient(circle at 50% 50%,#7a442f,#252033 52%,#121622)}.glyph{font-size:49px;filter:drop-shadow(0 0 18px #c4b5fd88)}.tag{position:absolute;left:12px;top:12px;background:#090b12c9;border:1px solid #4a4b67;border-radius:7px;padding:5px 8px;font-size:10px;color:#d9d5ff}.productbody{padding:15px;display:flex;flex-direction:column;flex:1}.productbody h3{font-size:16px;margin:0 0 7px}.desc{font-size:12px;line-height:1.65;color:var(--muted);margin:0 0 13px;min-height:40px}.meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}.pill{font-size:10px;color:#b7c3d9;background:#202638;padding:5px 7px;border-radius:6px}.productbottom{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:auto}.price{font-size:20px;font-weight:850}.price small{font-size:11px;color:var(--muted);font-weight:500}.add{padding:9px 11px;border:0;border-radius:10px;background:#a78bfa;color:#0b0b16;font-size:12px;font-weight:850}.add:hover{background:#c4b5fd}.empty{display:none;text-align:center;padding:40px;color:var(--muted);border:1px dashed var(--line);border-radius:15px}.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:48px 0}.trustcard{border:1px solid var(--line);border-radius:15px;padding:18px;background:#111522}.trustcard .ico{font-size:22px}.trustcard h3{font-size:14px;margin:10px 0 5px}.trustcard p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}.notice{border:1px solid #5b4b27;background:#211c11;color:#e9d8a7;border-radius:12px;padding:13px 15px;font-size:12px;line-height:1.7;margin:22px 0 40px}.footer{border-top:1px solid var(--line);padding:25px 0 35px;color:var(--muted);font-size:12px}.footrow{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.modalback{position:fixed;inset:0;background:#000b;z-index:20;display:none;align-items:flex-end;justify-content:center}.modalback.show{display:flex}.drawer{width:min(560px,100%);max-height:88dvh;overflow:auto;background:#111522;border:1px solid var(--line);border-radius:22px 22px 0 0;padding:20px}.drawertop{display:flex;justify-content:space-between;align-items:center}.drawertop h2{margin:0;font-size:21px}.close{border:1px solid var(--line);background:#202638;color:white;border-radius:10px;padding:7px 11px}.cartitems{display:grid;gap:10px;margin:18px 0}.cartitem{display:flex;align-items:center;gap:12px;background:#191e2d;border-radius:12px;padding:12px}.cartemoji{font-size:24px}.cartitem .info{flex:1}.cartitem strong{display:block;font-size:13px}.cartitem small{color:var(--muted)}.qty{display:flex;align-items:center;gap:8px}.qty button{border:1px solid var(--line);background:#111522;color:white;border-radius:7px;width:28px;height:28px}.total{border-top:1px solid var(--line);padding-top:15px;display:flex;justify-content:space-between;font-weight:800;font-size:18px}.full{width:100%;margin-top:14px}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:30;background:#e9e5ff;color:#17132c;padding:12px 18px;border-radius:12px;font-size:13px;font-weight:800;transition:.2s;box-shadow:0 10px 30px #0008}.toast.show{opacity:1;transform:translate(-50%,0)}.smallnote{font-size:11px;line-height:1.7;color:var(--muted);margin-top:12px}
+@media(max-width:760px){.nav{min-height:60px}.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:34px}.heroart{min-height:210px}.orb{width:135px;height:135px;font-size:54px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.productvisual{height:112px}.productbody{padding:12px}.productbody h3{font-size:14px}.desc{font-size:11px;min-height:52px}.price{font-size:18px}.add{padding:9px 8px}.trust{grid-template-columns:1fr;gap:9px;margin:34px 0}.stats{gap:7px}.stat{padding:11px}.stat strong{font-size:17px}.stat span{font-size:10px}.sectionhead h2{font-size:22px}.sectionhead{align-items:start;flex-direction:column}.wrap{width:min(100% - 24px,1120px)}}
+@media(max-width:370px){.products{grid-template-columns:1fr}.productvisual{height:145px}.desc{min-height:0}.navright .btn{padding:9px 10px}.brand{font-size:13px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+  <a class="brand" href="#"><span class="logo">✦</span><span>GAME <span class="grad">HUB</span></span></a>
+  <nav class="navlinks"><a href="#products">商品商城</a><a href="#service">服务保障</a><a href="#about">平台说明</a></nav>
+  <div class="navright"><button class="btn" id="ordersBtn">我的订单</button><button class="btn primary" id="cartBtn">购物车 <span class="cartcount" id="cartCount">0</span></button></div>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <div><span class="eyebrow"><span class="dot"></span> GAMING TOOLS MARKETPLACE</span>
+      <h1>为你的游戏体验<br><span class="grad">解锁更多可能</span></h1>
+      <p>探索精选游戏插件、创意 MOD 与练习辅助工具。商品信息清晰，适配说明透明，帮助你找到适合自己的游戏扩展体验。</p>
+      <div class="heroactions"><a class="btn primary" href="#products">浏览全部商品　↘</a><a class="btn" href="#service">了解服务保障</a></div>
+    </div>
+    <div class="heroart" aria-label="游戏风格装饰"><div class="orb">⌘</div><div class="floatlabel">精选工具 · 清晰说明 · 安全使用</div></div>
+  </section>
+  <section class="stats" aria-label="平台特点">
+    <div class="stat"><strong>精选工具</strong><span>按类型轻松浏览</span></div><div class="stat"><strong>信息透明</strong><span>价格与兼容性说明</span></div><div class="stat"><strong>手机适配</strong><span>安卓浏览器友好</span></div>
+  </section>
+  <section id="products">
+    <div class="sectionhead"><div><h2>精选商品</h2><p>演示商品与价格仅用于网页原型，可在上线前替换。</p></div><span class="pill">DEMO STORE</span></div>
+    <div class="searchrow"><input class="search" id="search" type="search" placeholder="搜索商品名称或关键词…" aria-label="搜索商品"><select class="search" id="sort" aria-label="商品排序" style="max-width:135px"><option value="default">默认排序</option><option value="low">价格从低到高</option><option value="high">价格从高到低</option></select></div>
+    <div class="filters" id="filters"><button class="chip active" data-cat="全部">全部商品</button><button class="chip" data-cat="插件">游戏插件</button><button class="chip" data-cat="MOD">MOD 内容</button><button class="chip" data-cat="练习">练习工具</button><button class="chip" data-cat="配置">配置工具</button></div>
+    <div class="products" id="productsGrid"></div><div class="empty" id="empty">没有找到符合条件的商品，试试其他关键词。</div>
+  </section>
+  <section class="trust" id="service">
+    <article class="trustcard"><div class="ico">◈</div><h3>商品信息清晰</h3><p>上线时应补充支持游戏、版本要求、安装步骤、许可范围和售后政策。</p></article>
+    <article class="trustcard"><div class="ico">⬡</div><h3>合规使用优先</h3><p>仅上架获得授权且符合游戏规则的插件、MOD 和辅助工具，不提供作弊或绕过反作弊功能。</p></article>
+    <article class="trustcard"><div class="ico">◎</div><h3>售前售后支持</h3><p>可在正式版中接入客服渠道、退款规则、订单查询和邮件通知。</p></article>
+  </section>
+  <div class="notice" id="about"><strong>平台说明：</strong>当前是可交互的前端演示版。购物车只在当前页面临时生效，不会真实扣款、创建服务器订单或交付数字商品。正式营业前需要部署后端、数据库、账号系统、合规支付、隐私政策、服务条款和退款规则，并确认商品授权及目标游戏的使用条款。</div>
+</main>
+<footer class="footer"><div class="wrap footrow"><span>© 2026 GAME HUB · 游戏工具商城原型</span><span>服务条款　隐私政策　联系我们（上线前补充）</span></div></footer>
+<div class="modalback" id="modal" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"><div class="drawer">
+  <div class="drawertop"><h2 id="drawerTitle">我的购物车</h2><button class="close" id="closeModal">关闭 ✕</button></div>
+  <div class="cartitems" id="cartItems"></div><div class="total"><span>合计（演示）</span><span id="cartTotal">¥0.00</span></div>
+  <button class="btn primary full" id="checkout">继续结算（演示）</button><p class="smallnote">这是前端演示，不会收款。正式支付需接入合规支付服务并由服务器验证订单金额。</p>
+</div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const products=[
+{id:1,name:"跨平台按键配置包",cat:"配置",price:12.9,emoji:"⌨️",tone:"blue",tag:"入门推荐",desc:"自定义按键布局与灵敏度备份，适合支持配置导入的游戏。",pills:["配置工具","数字内容"]},
+{id:2,name:"创意地图 MOD 包",cat:"MOD",price:19.9,emoji:"🗺️",tone:"mint",tag:"创意内容",desc:"为支持社区内容的游戏添加自定义地图与探索玩法。",pills:["MOD 内容","需检查兼容性"]},
+{id:3,name:"瞄准练习计时器",cat:"练习",price:9.9,emoji:"🎯",tone:"orange",tag:"练习工具",desc:"独立练习计时、训练记录与目标管理，不修改游戏进程。",pills:["练习工具","独立运行"]},
+{id:4,name:"快捷启动插件",cat:"插件",price:15.9,emoji:"⚡",tone:"blue",tag:"效率工具",desc:"整理本地游戏快捷方式与启动参数，具体支持范围以说明为准。",pills:["游戏插件","桌面工具"]},
+{id:5,name:"像素风 UI 皮肤包",cat:"MOD",price:8.9,emoji:"🎨",tone:"mint",tag:"外观定制",desc:"适用于允许自定义外观的游戏或社区项目，请先确认授权许可。",pills:["外观内容","许可说明"]},
+{id:6,name:"训练数据记录表",cat:"练习",price:6.9,emoji:"📊",tone:"orange",tag:"轻量实用",desc:"记录练习时长、命中率等手动输入的数据，帮助复盘训练过程。",pills:["训练记录","本地工具"]}
+];
+let category="全部",cart={};
+const grid=document.getElementById("productsGrid"),empty=document.getElementById("empty");
+const money=n=>"¥"+n.toFixed(2);
+function renderProducts(){
+ let q=document.getElementById("search").value.trim().toLowerCase(),sort=document.getElementById("sort").value;
+ let list=products.filter(p=>(category==="全部"||p.cat===category)&&(`${p.name} ${p.desc} ${p.cat} ${p.pills.join(" ")}`).toLowerCase().includes(q));
+ if(sort==="low")list.sort((a,b)=>a.price-b.price);if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ grid.innerHTML=list.map(p=>`<article class="product"><div class="productvisual ${p.tone}"><span class="tag">${p.tag}</span><span class="glyph">${p.emoji}</span></div><div class="productbody"><h3>${p.name}</h3><p class="desc">${p.desc}</p><div class="meta">${p.pills.map(t=>`<span class="pill">${t}</span>`).join("")}</div><div class="productbottom"><div class="price">${money(p.price)} <small>/ 件</small></div><button class="add" data-add="${p.id}">＋ 加入购物车</button></div></div></article>`).join("");
+ empty.style.display=list.length?"none":"block";
+ grid.querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>addToCart(+b.dataset.add)));
+}
+function addToCart(id){cart[id]=(cart[id]||0)+1;updateCartCount();showToast("已加入购物车");}
+function updateCartCount(){document.getElementById("cartCount").textContent=Object.values(cart).reduce((a,b)=>a+b,0);}
+function renderCart(){
+ const items=Object.entries(cart).filter(([,qty])=>qty>0);
+ const holder=document.getElementById("cartItems");
+ if(!items.length){holder.innerHTML='<div style="text-align:center;padding:35px 10px;color:#9aa3bb">购物车还是空的<br><small>去精选商品里看看吧。</small></div>';}
+ else holder.innerHTML=items.map(([id,qty])=>{const p=products.find(x=>x.id===+id);return `<div class="cartitem"><span class="cartemoji">${p.emoji}</span><div class="info"><strong>${p.name}</strong><small>${money(p.price)} / 件</small></div><div class="qty"><button data-qty="${id}" data-delta="-1" aria-label="减少数量">−</button><span>${qty}</span><button data-qty="${id}" data-delta="1" aria-label="增加数量">＋</button></div></div>`}).join("");
+ holder.querySelectorAll("[data-qty]").forEach(b=>b.addEventListener("click",()=>{let id=+b.dataset.qty;cart[id]=(cart[id]||0)+(+b.dataset.delta);if(cart[id]<=0)delete cart[id];updateCartCount();renderCart();}));
+ const total=items.reduce((sum,[id,qty])=>sum+products.find(p=>p.id===+id).price*qty,0);document.getElementById("cartTotal").textContent=money(total);
+}
+function openModal(title){document.getElementById("drawerTitle").textContent=title;renderCart();document.getElementById("modal").classList.add("show");}
+function closeModal(){document.getElementById("modal").classList.remove("show");}
+let toastTimer;function showToast(msg){const t=document.getElementById("toast");t.textContent=msg;t.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove("show"),1800);}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("[data-cat]");if(!b)return;category=b.dataset.cat;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===b));renderProducts();});
+document.getElementById("search").addEventListener("input",renderProducts);document.getElementById("sort").addEventListener("change",renderProducts);
+document.getElementById("cartBtn").addEventListener("click",()=>openModal("我的购物车"));
+document.getElementById("ordersBtn").addEventListener("click",()=>{showToast("演示版暂未接入真实订单系统");});
+document.getElementById("closeModal").addEventListener("click",closeModal);
+document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal();});
+document.getElementById("checkout").addEventListener("click",()=>showToast("演示版未接入支付，请勿输入支付信息"));
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+renderProducts();
+</script>
+</body>
+</html>
